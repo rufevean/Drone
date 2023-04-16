@@ -30,10 +30,31 @@ $navfont : 'Bebas Neue', cursive;
     }
     &-items{
         height: 100%;
-        width: 30%;
+        width: 50%;
         display: inline-flex;
         right: 0;
-        border: 1px solid #000;
+        .nav-community{
+            margin: 12% auto auto 5%;
+            &-icon{
+                height: 1.7em;
+                width: 1.7em;
+            }
+
+        }    
+        .nav-news{
+            margin: 13% auto auto 5%;
+            &-icon{
+                height: 1.7em;
+                width: 1.7em;
+            }
+        }
+
+        .nav-menu{
+            height: 20px;
+            width:30px;
+            margin: 13% auto auto 5%;
+
+        }
 
     }
     @media screen  and (min-width: 768px){
@@ -55,24 +76,24 @@ $navfont : 'Bebas Neue', cursive;
                 width: 30%;
                 display: inline-flex;
                 right: 0;
-                border: 1px solid #000;
             .nav-community{
-                height: 30px;
-                border: 1px solid #000;
-                width:30px;
-                margin: 13% auto auto 5%;
+                margin: 12% auto auto 5%;
+                &-icon{
+                    height:2.5em;
+                    width: 2.5em;
+                }
 
             }    
             .nav-news{
-                height: 30px;
-                border: 1px solid #000;
-                width:30px;
-                margin: 13% auto auto 5%;
+                margin: 12% auto auto 5%;
+                &-icon{
+                    height: 2.5em;
+                    width: 2.5em;
+                }
             }
 
             .nav-menu{
                 height: 30px;
-                border: 1px solid #000;
                 width:30px;
                 margin: 13% auto auto 5%;
 
