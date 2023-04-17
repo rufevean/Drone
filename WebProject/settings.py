@@ -67,6 +67,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'category.context_processors.categories',
             ],
         },
     },
@@ -126,15 +127,3 @@ STATICFILES_DIRS = [Path.joinpath(BASE_DIR,'static')]
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-'''
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'USER': 'SA',
-        'PASSWORD': 'Pa$$w0rd',
-        'HOST': 'localhost',
-        'PORT': '1433',
-    }
-}
-'''

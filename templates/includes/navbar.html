@@ -4,6 +4,7 @@
         <div class="logo-head">
             FromAbove
         </div>
+
         <div class="logo-tail">
             Discover the skies
         </div>
@@ -15,6 +16,16 @@
         <div class="nav-news">
             <img alt="newspapericon" class="nav-news-icon" src="{% static 'icons/newspapericon.png' %}">
         </div>
+
+            {% for category in categories %}
+                <div class="nav-news">
+                Category:
+                    {{ category.category_name }}
+
+                </div>
+            {% endfor %}
+
+
         <div class="nav-menu">
             <hr>
             <hr>
