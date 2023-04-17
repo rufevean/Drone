@@ -1,7 +1,38 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<section class="main-body">
-</section>
+    <section class="main-body">
+  <h1>All Drones</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Model</th>
+        <th>Release Date</th>
+        <th>Carrying Capacity</th>
+        <th>Flight Time</th>
+        <th>Max Speed</th>
+        <th>Weight</th>
+        <th>Price</th>
+        <th>Image</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for drone in drones %}
+      <tr>
+        <td>{{ drone.name }}</td>
+        <td>{{ drone.model }}</td>
+        <td>{{ drone.release_date }}</td>
+        <td>{{ drone.carrying_capacity }}</td>
+        <td>{{ drone.flight_time }}</td>
+        <td>{{ drone.max_speed }}</td>
+        <td>{{ drone.weight }}</td>
+        <td>{{ drone.price }}</td>
+        <td><img src="{{ drone.image.url }}" alt="{{ drone.name }}" width="100" height="100"></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+    </section>
 
 {% endblock %}
