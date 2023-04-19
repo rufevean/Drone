@@ -3,10 +3,8 @@
 //varibales
 
 $navfont : 'Bebas Neue', cursive;
-
-
-.nav,.main-body,.footer{
-    border: 1px solid #000;
+html{
+    overflow: hidden;
 }
 
 .nav{
@@ -105,10 +103,22 @@ $navfont : 'Bebas Neue', cursive;
 }
 
 .main-body{
-    height: 60vh;
+    height: 10vh;
     width: 100%;
     @media screen  and (min-width: 768px){
-        height: 75vh;
+        height: 20vh;
+        margin:3vh 10vh auto 15vh;
+        .drone{
+            height: 10vh;
+        }
+    }
+}
+
+#drone{
+    height: 10vh;
+    width: 100%;
+    @media screen  and (min-width: 768px){
+        height: 20vh;
     }
 }
 
