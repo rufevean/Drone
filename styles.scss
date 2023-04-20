@@ -5,6 +5,7 @@
 $navfont : 'Bebas Neue', cursive;
 html{
     overflow: hidden;
+    background-color: gray;
 }
 
 .nav{
@@ -107,7 +108,7 @@ html{
     width: 100%;
     @media screen  and (min-width: 768px){
         height: 20vh;
-        margin:3vh 10vh auto 15vh;
+        margin:4vh 10vh auto calc(20vh);
         .drone{
             height: 10vh;
         }
@@ -128,4 +129,8 @@ html{
     @media screen  and (min-width: 768px){
         height: 10vh;
     }
+}
+canvas{
+    margin-left: calc(15vw);
+    margin-top: calc(2vh);
 }

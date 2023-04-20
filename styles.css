@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 html {
   overflow: hidden;
+  background-color: gray;
 }
 
 .nav {
@@ -97,7 +98,7 @@ html {
 @media screen and (min-width: 768px) {
   .main-body {
     height: 20vh;
-    margin: 3vh 10vh auto 15vh;
+    margin: 4vh 10vh auto 20vh;
   }
   .main-body .drone {
     height: 10vh;
@@ -122,4 +123,9 @@ html {
   .footer {
     height: 10vh;
   }
+}
+
+canvas {
+  margin-left: 15vw;
+  margin-top: 2vh;
 }/*# sourceMappingURL=styles.css.map */

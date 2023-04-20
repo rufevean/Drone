@@ -1,0 +1,11 @@
+Model Information:
+* title:	DJI Mavic Air Drone
+* source:	https://sketchfab.com/3d-models/dji-mavic-air-drone-4f95cb46814f43859b80172c9f712cd7
+* author:	apd1992 (https://sketchfab.com/apd1992)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "DJI Mavic Air Drone" (https://sketchfab.com/3d-models/dji-mavic-air-drone-4f95cb46814f43859b80172c9f712cd7) by apd1992 (https://sketchfab.com/apd1992) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

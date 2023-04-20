@@ -12,7 +12,7 @@ let drone = {
 
 const init = () => {
     drone.scene = new THREE.Scene();
-    drone.scene.background = new THREE.Color("white"); // Set background color
+    drone.scene.background = new THREE.Color("gray"); // Set background color
     drone.camera = new THREE.PerspectiveCamera(
         75,
         window.innerWidth / window.innerHeight,
@@ -21,30 +21,23 @@ const init = () => {
     );
     drone.camera.position.set(0, 10, 0);
     drone.camera.lookAt(drone.scene.position);
-    drone.scene.position.set(-3, 0, -3);
+    drone.scene.position.set(0, 0, 0);
+    drone.scene.rotation.set(2.5, 0, 2.9);
 
     drone.renderer = new THREE.WebGLRenderer();
     drone.renderer.physicallyCorrectLights = true;
-    drone.renderer.setSize(window.innerWidth, window.innerHeight);
+    drone.renderer.setSize(window.innerWidth/2, window.innerHeight/2);
     drone.el.appendChild(drone.renderer.domElement);
-      
+
     //orbital controls
     const controls = new OrbitControls(drone.camera, drone.renderer.domElement);
     controls.enableDamping = true;
-    controls.autoRotate = true;
-    // controls.minPolarAngle = Math.PI / 2;
-    // controls.maxPolarAngle = Math.PI / 2;
-    // controls.minAzimuthAngle = 0;
-    // controls.maxAzimuthAngle = 0
-    // ;
-
-    // Disable panning and enable rotation
+    controls.enableZoom = false;
     controls.enablePan = false;
-    controls.enableRotate = true;
-
-    // Set rotate speed to control sensitivity of rotation
-    controls.rotateSpeed = 0.7;
-
+    controls.enableRotate = false;
+    drone.renderer.gammaInput = true;
+    drone.renderer.gammaOutput = true;
+    
     // Add directional lighting
     const light = new THREE.DirectionalLight(0xffffff, 1);
     light.position.set(0, 100, 0);
@@ -92,13 +85,15 @@ const render = () => {
 const loader = new GLTFLoader();
 
 loader.load(
-    "drone_design/scene.gltf",
+    "dji_mavic_air_drone/scene.gltf",
     function (gltf) {
         console.log(gltf.scene);
-        gltf.scene.scale.set(10, 10, 10);
-        gltf.scene.position.set(0, 2, 0);
+        gltf.scene.scale.set(.4, .4 ,.4);
+        gltf.scene.position.set(0, 0, 0);
         drone.scene.add(gltf.scene);
-        gltf.scene.rotation.x = -(Math.PI / 2);
+        // const xRotation = - Math.PI / 4; // rotates 45 degrees
+        // gltf.scene.rotation.x = xRotation;
+
         const box = new THREE.Box3().setFromObject(gltf.scene);
         const size = new THREE.Vector3();
         box.getSize(size);
@@ -110,6 +105,15 @@ loader.load(
     }
 );
 const animate = () => {
+    const currentRotation = drone.scene.rotation.clone();
+
+    // calculate the new Y-axis rotation
+    const newYRotation = currentRotation.y + 0.01;
+
+    // set the new rotation of the drone
+    drone.scene.rotation.set(currentRotation.x, newYRotation ,currentRotation.z);
+    
+
     requestAnimationFrame(animate);
     render();
 };
