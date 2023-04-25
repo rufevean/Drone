@@ -1,35 +1,46 @@
 {% load static %}
-<nav class="nav">
-    <logo class="logo">
-        <div class="logo-head">
-            FromAbove
+<!-- Loading animation -->
+    <div class="preloader">
+      <div class="preloader-animation">
+        <div class="preloader-spinner">
         </div>
-
-        <div class="logo-tail">
-            Discover the skies
-        </div>
-    </logo>
-    <div class="nav-items">
-        <div class="nav-community">
-            <img alt="communityicon" class="nav-community-icon" src="{% static 'icons/communityicon.png' %}">
-        </div>
-        <div class="nav-news">
-            <img alt="newspapericon" class="nav-news-icon" src="{% static 'icons/newspapericon.png' %}">
-        </div>
-
-            {% for category in categories %}
-                <div class="nav-news">
-                Category:
-                    {{ category.category_name }}
-
-                </div>
-            {% endfor %}
-
-
-        <div class="nav-menu">
-            <hr>
-            <hr>
-        </div>
+      </div>
     </div>
+    <!-- /Loading animation -->
 
-</nav>
+<div id="page" class="page">
+      <!-- Header -->
+      <header id="site_header" class="header mobile-menu-hide">
+        <div class="header-content">
+          <div class="site-title-block mobile-hidden">
+            <div class="site-title">Mavic<span>Air 2</span></div>
+          </div>
+
+          <!-- Navigation -->
+          <div class="site-nav">
+            <!-- Main menu -->
+            <ul id="nav" class="site-main-menu">
+              <li>
+                <a class="pt-trigger" href="#home" data-animation="62">Home</a><!-- href value = data-id without # of .pt-page. -->
+              </li>
+              <li>
+                <a class="pt-trigger" href="#resume" data-animation="62">Resume</a>
+              </li>
+              <li>
+                <a class="pt-trigger" href="#services" data-animation="62">Services</a>
+              </li>
+              <li>
+                <a class="pt-trigger" href="#portfolio" data-animation="62">Portfolio</a>
+              </li>
+              <li>
+                <a class="pt-trigger" href="#blog" data-animation="62">Blog</a>
+              </li>
+            </ul>
+            <!-- /Main menu -->
+          </div>
+          <!-- Navigation -->
+        </div>
+      </header>
+      <!-- /Header -->
+
+
