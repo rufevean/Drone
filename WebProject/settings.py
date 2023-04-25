@@ -77,15 +77,24 @@ WSGI_APPLICATION = 'WebProject.wsgi.application'
 
 
 # Database
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 
+DATABASES = {
+    'default': {
+        'ENGINE': 'mssql',
+        'USER': 'SA',
+        'NAME': 'dronesite',
+        'PASSWORD': 'Pa$$w0rd',
+        'OPTIONS': {
+            'options': '-c search_path=dronesite',
+            'driver': 'ODBC Driver 17 for SQL Server',
+            'DEFAULT_SCHEMA': 'dronesite',
+         },
+        'HOST': '185.28.154.2',
+        'PORT': '1433',
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
