@@ -1,6 +1,9 @@
-import * as THREE from "three";
+import * as THREE from "C:/code/Drone/node_modules/three/src/Three.js";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
+
+// making a drone object
+
 
 let drone = {
     el: document.getElementById("drone"),
@@ -10,7 +13,10 @@ let drone = {
     position: null,
 };
 
+
+
 const init = () => {
+    // creating a scene
     drone.scene = new THREE.Scene();
     drone.scene.background = new THREE.Color("gray"); // Set background color
     drone.camera = new THREE.PerspectiveCamera(
