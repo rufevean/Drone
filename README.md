@@ -1,5 +1,5 @@
-# FROMABOVE 
-~ DISCOVER THE SKIES ~
+# FROMABOVE  ~ DISCOVER THE SKIES ~
+
 
 
 ** ## INSTALLATION **
@@ -17,7 +17,6 @@ vite is available via npm:
 ** ## USAGE **
 
 >npx vite
-
 
 
 
