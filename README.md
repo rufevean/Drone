@@ -1,7 +1,8 @@
-# FROMABOVE ~DISCOVER THE SKIES ~
+# FROMABOVE 
+~ DISCOVER THE SKIES ~
 
 
-** ## INSTALLATION**
+** ## INSTALLATION **
 
 three.js is available via npm:
 
@@ -13,7 +14,7 @@ vite is available via npm:
 > npm install --save-dev vite
 
 
-** ## USAGE**
+** ## USAGE **
 
 >npx vite
 
