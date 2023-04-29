@@ -38,8 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'account',
-    'category',
     'drone',
 ]
 
@@ -67,7 +65,6 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'category.context_processors.categories',
             ],
         },
     },
@@ -78,23 +75,28 @@ WSGI_APPLICATION = 'WebProject.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
 
-
+'''
 DATABASES = {
     'default': {
         'ENGINE': 'mssql',
         'USER': 'SA',
-        'NAME': 'dronesite',
+	'NAME': 'dronesite',
         'PASSWORD': 'Pa$$w0rd',
-        'OPTIONS': {
-            'options': '-c search_path=dronesite',
-            'driver': 'ODBC Driver 17 for SQL Server',
-            'DEFAULT_SCHEMA': 'dronesite',
-         },
+       'OPTIONS': {
+            'DEFAULT_SCHEMA': 'website',
+        },
         'HOST': '185.28.154.2',
         'PORT': '1433',
     }
 }
+'''
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators

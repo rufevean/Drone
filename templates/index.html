@@ -1,977 +1,992 @@
 {% extends 'base.html' %}
 {% block content %}
-{% load static %}
-
-
-    <!-- Main Content -->
-    <div id="main" class="site-main">
-        <!-- Page changer wrapper -->
-        <div class="pt-wrapper">
-            <!-- Subpages -->
-            <div class="subpages">
-
-                <!-- Home Subpage -->
-                <section class="pt-page" data-id="home">
-                    <div class="section-inner start-page-content">
-                        <div class="page-header">
-                            <div class="row">
-                                <div class="col-sm-4 col-md-4 col-lg-4">
-                                    <div class="photo">
-                                        <img src="{{ drones.image.url }}" alt="">
-                                    </div>
-                                </div>
-
-                                <div class="col-sm-8 col-md-8 col-lg-8">
-                                    <div class="title-block">
-                                        <h1>{{ drones.name }}</h1>
-                                        <div class="owl-carousel text-rotation">
-                                            <div class="item">
-                                                <div class="sp-subtitle">{{ drones.model }}</div>
-                                            </div>
-                                            <div class="item">
-                                                <div class="sp-subtitle">Mavic Air</div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="social-links">
-                                        <a href="#"><i class="fa fa-twitter"></i></a>
-                                        <a href="#"><i class="fa fa-facebook"></i></a>
-                                        <a href="#"><i class="fa fa-instagram"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="page-content">
-                            <div class="row">
-
-                                <div class="col-sm-6 col-md-6 col-lg-6">
-                                    <div class="about-me">
-                                        <div class="block-title">
-                                            <h3>About <span>Me</span></h3>
-                                        </div>
-                                        <p>It features a 48MP camera capable of shooting 4K video at 60fps, a 3-axis gimbal for stabilization, and a 34-minute flight time. The drone also includes advanced features such as obstacle avoidance, intelligent tracking, and HDR video capabilities. Overall, the Mavic Air 2 is an excellent option for hobbyists and professionals alike who are looking for a portable and high-performing drone.</p>
-                                    </div>
-                                </div>
-
-                                <div class="col-sm-6 col-md-6 col-lg-6">
-                                    <ul class="info-list">
-                                        <li><span class="title">Weight:</span><span class="value">{{ drones.weight }}gr</span></li>
-                                        <li><span class="title">Price:</span><span class="value">{{ drones.price }}$</span></li>
-                                        <li><span class="title">Max Speed:</span><span class="value">{{ drones.max_speed }} kmh</span></li>
-                                        <li><span class="title">Flight Duration:</span><span class="value">{{ drones.flight_time }}mins</span></li>
-                                        <li><span class="title">Release Date</span><span class="value">{{ drones.release_date }}</span></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- End of Home Subpage -->
-
-                <!-- Resume Subpage -->
-                <section class="pt-page" data-id="resume">
-                    <div class="section-inner custom-page-content">
-                        <div class="page-header color-1">
-                            <h2>Resume</h2>
-                        </div>
-                        <div class="page-content">
-
-                            <div class="row">
-                                <div class="col-sm-6 col-md-6 col-lg-6">
-                                    <div class="block">
-                                        <div class="block-title">
-                                            <h3>Education</h3>
-                                        </div>
-
-                                        <div class="timeline">
-                                            <!-- Education 1 -->
-                                            <div class="timeline-item">
-                                                <h4 class="item-title">Specialization Course</h4>
-                                                <span class="item-period">2010</span>
-                                                <span class="item-small">Apple Inc.</span>
-                                                <p class="item-description">Mauris magna sapien, pharetra consectetur
-                                                    fringilla vitae, interdum sed tortor.</p>
-                                            </div>
-                                            <!-- / Education 1 -->
-
-                                            <!-- Education 2 -->
-                                            <div class="timeline-item">
-                                                <h4 class="item-title">Specialization Course</h4>
-                                                <span class="item-period">2010</span>
-                                                <span class="item-small">Apple Inc.</span>
-                                                <p class="item-description">Mauris magna sapien, pharetra consectetur
-                                                    fringilla vitae, interdum sed tortor.</p>
-                                            </div>
-                                            <!-- / Education 2 -->
-
-                                            <!-- Education 3 -->
-                                            <div class="timeline-item">
-                                                <h4 class="item-title">Specialization Course</h4>
-                                                <span class="item-period">2010</span>
-                                                <span class="item-small">Apple Inc.</span>
-                                                <p class="item-description">Mauris magna sapien, pharetra consectetur
-                                                    fringilla vitae, interdum sed tortor.</p>
-                                            </div>
-                                            <!-- / Education 3 -->
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-sm-6 col-md-6 col-lg-6">
-                                    <div class="block">
-                                        <div class="block-title">
-                                            <h3>Experience</h3>
-                                        </div>
-
-                                        <div class="timeline">
-                                            <!-- Experience 1 -->
-                                            <div class="timeline-item">
-                                                <h4 class="item-title">Frontend-developer</h4>
-                                                <span class="item-period">Dec 2012 - Current</span>
-                                                <span class="item-small">Web Agency</span>
-                                                <p class="item-description">Mauris magna sapien, pharetra consectetur
-                                                    fringilla vitae, interdum sed tortor.</p>
-                                            </div>
-                                            <!-- / Experience 1 -->
-
-                                            <!-- Experience 2 -->
-                                            <div class="timeline-item">
-                                                <h4 class="item-title">Web Designer</h4>
-                                                <span class="item-period">Dec 2011 - Nov 2012</span>
-                                                <span class="item-small">Apple Inc.</span>
-                                                <p class="item-description">Mauris magna sapien, pharetra consectetur
-                                                    fringilla vitae, interdum sed tortor.</p>
-                                            </div>
-                                            <!-- / Experience 2 -->
-
-                                            <!-- Experience 3 -->
-                                            <div class="timeline-item">
-                                                <h4 class="item-title">Graphic Designer</h4>
-                                                <span class="item-period">Jan 2010 - Dec 2011</span>
-                                                <span class="item-small">Apple Inc.</span>
-                                                <p class="item-description">Mauris magna sapien, pharetra consectetur
-                                                    fringilla vitae, interdum sed tortor.</p>
-                                            </div>
-                                            <!-- / Experience 3 -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-sm-6 col-md-6 col-lg-6">
-                                    <div class="block">
-                                        <div class="block-title">
-                                            <h3>Design <span>Skills</span></h3>
-                                        </div>
-
-                                        <div class="skills-info">
-                                            <h4>Web Design</h4>
-                                            <div class="skill-container">
-                                                <div class="skill-percentage skill-1"></div>
-                                            </div>
-
-                                            <h4>Graphic Design</h4>
-                                            <div class="skill-container">
-                                                <div class="skill-percentage skill-2"></div>
-                                            </div>
-
-                                            <h4>Print Design</h4>
-                                            <div class="skill-container">
-                                                <div class="skill-percentage skill-3"></div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                                <div class="col-sm-6 col-md-6 col-lg-6">
-                                    <div class="block">
-                                        <div class="block-title">
-                                            <h3>Coding <span>Skills</span></h3>
-                                        </div>
-
-                                        <div class="skills-info">
-                                            <h4>HTML5</h4>
-                                            <div class="skill-container">
-                                                <div class="skill-percentage skill-4"></div>
-                                            </div>
-
-                                            <h4>CSS3/LESS/SASS</h4>
-                                            <div class="skill-container">
-                                                <div class="skill-percentage skill-5"></div>
-                                            </div>
-
-                                            <h4>jQuery</h4>
-                                            <div class="skill-container">
-                                                <div class="skill-percentage skill-6"></div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Download Resume Button -->
-                            <div class="row">
-                                <div class="col-sm-12 col-md-12 col-lg-12">
-                                    <div class="block">
-                                        <div class="center download-resume">
-                                            <a href="#" class="btn btn-secondary">Download Resume</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End of Download Resume Button -->
-
-                        </div>
-                    </div>
-                </section>
-                <!-- End of Resume Subpage -->
-
-
-                <!-- Services Subpage -->
-                <section class="pt-page" data-id="services">
-                    <div class="section-inner custom-page-content">
-                        <div class="page-header color-1">
-                            <h2>Services</h2>
-                        </div>
-                        <div class="page-content">
-                            <!-- My Services -->
-                            <div class="row">
-                                <div class="col-sm-12 col-md-12">
-                                    <div class="block-title">
-                                        <h3>My <span>Services</span></h3>
-                                    </div>
-                                </div>
-
-                                <div class="col-sm-6 col-md-3">
-                                    <div class="service-block">
-                                        <div class="service-info">
-                                            <!--<i class="service-icon fa fa-shopping-cart"></i>-->
-                                            <div class="service-image">
-                                                <img src="{% static 'images/service/web_design_icon.png' %}" alt="Responsive Design"
-                                                     class="mCS_img_loaded">
-                                            </div>
-                                            <h4>Web Design</h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                                tempor.</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-sm-6 col-md-3">
-                                    <div class="service-block">
-                                        <div class="service-info">
-                                            <div class="service-image">
-                                                <img src="{% static 'images/service/photography_icon.png' %}" alt="Photography"
-                                                     class="mCS_img_loaded">
-                                            </div>
-                                            <h4>Photography</h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                                tempor.</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-sm-6 col-md-3">
-                                    <div class="service-block">
-                                        <div class="service-info">
-                                            <div class="service-image">
-                                                <img src="{% static 'images/service/creativity_icon.png' %}" alt="Creativity"
-                                                     class="mCS_img_loaded">
-                                            </div>
-                                            <h4>Management</h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                                tempor.</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-sm-6 col-md-3">
-                                    <div class="service-block">
-                                        <div class="service-info">
-                                            <div class="service-image">
-                                                <img src="{% static 'images/service/advetising_icon.png' %}" alt="Advetising"
-                                                     class="mCS_img_loaded">
-                                            </div>
-                                            <h4>Advetising</h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                                tempor.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End of My Services -->
-
-                            <!-- Clients -->
-                            <div class="row">
-                                <div class="col-sm-12 col-md-12">
-                                    <div class="block-title">
-                                        <h3>Clients</h3>
-                                    </div>
-
-                                    <div class="col-sm-4 col-md-2 subpage-block">
-                                        <div class="client-block">
-                                            <a href="#" target="_blank"><img src="{% static 'images/clients/client_1.png' %}"
-                                                                             alt="image" class="mCS_img_loaded"></a>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-sm-4 col-md-2 subpage-block">
-                                        <div class="client-block">
-                                            <a href="#" target="_blank"><img src="{% static 'images/clients/client_2.png' %}"
-                                                                             alt="image" class="mCS_img_loaded"></a>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-sm-4 col-md-2 subpage-block">
-                                        <div class="client-block">
-                                            <a href="#" target="_blank"><img src="{% static 'images/clients/client_3.png' %}"
-                                                                             alt="image" class="mCS_img_loaded"></a>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-sm-4 col-md-2 subpage-block">
-                                        <div class="client-block">
-                                            <a href="#" target="_blank"><img src="{% static 'images/clients/client_4.png' %}"
-                                                                             alt="image" class="mCS_img_loaded"></a>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-sm-4 col-md-2 subpage-block">
-                                        <div class="client-block">
-                                            <a href="#" target="_blank"><img src="{% static 'images/clients/client_5.png' %}"
-                                                                             alt="image" class="mCS_img_loaded"></a>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-sm-4 col-md-2 subpage-block">
-                                        <div class="client-block">
-                                            <a href="#" target="_blank"><img src="{% static 'images/clients/client_6.png' %}"
-                                                                             alt="image" class="mCS_img_loaded"></a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <!-- End of Clients -->
-
-                            <!-- Testimonials -->
-                            <div class="row">
-                                <div class="col-sm-12 col-md-12">
-                                    <div class="block-title">
-                                        <h3>Testimonials</h3>
-                                    </div>
-
-
-                                    <div class="testimonials owl-carousel block">
-                                        <!-- Testimonial 1 -->
-                                        <div class="testimonial-item">
-                                            <!-- Testimonial Author -->
-                                            <div class="testimonial-credits">
-                                                <!-- Picture -->
-                                                <div class="testimonial-picture">
-                                                    <img src="{% static 'images/testimonials/testimonial_photo_1.jpg' %}" alt="">
-                                                </div>
-                                                <!-- /Picture -->
-                                                <!-- Testimonial author information -->
-                                                <div class="testimonial-author-info">
-                                                    <p class="testimonial-author">Maria Richardson</p>
-                                                    <p class="testimonial-firm">Lindsley's Lumber</p>
-                                                </div>
-                                            </div>
-                                            <!-- /Testimonial author information -->
-                                            <!-- Testimonial Content -->
-                                            <div class="testimonial-content">
-                                                <div class="testimonial-text">
-                                                    <p>"Phasellus eu nunc tincidunt, ultricies elit vitae, pretium eros.
-                                                        Sed sed ipsum sed massa."</p>
-                                                </div>
-                                            </div>
-                                            <!-- /Testimonial Content -->
-                                        </div>
-                                        <!-- End of Testimonial 1 -->
-
-                                        <!-- Testimonial 2 -->
-                                        <div class="testimonial-item">
-                                            <!-- Testimonial Author -->
-                                            <div class="testimonial-credits">
-                                                <!-- Picture -->
-                                                <div class="testimonial-picture">
-                                                    <img src="{% static 'images/testimonials/testimonial_photo_2.jpg' %}" alt="">
-                                                </div>
-                                                <!-- /Picture -->
-                                                <!-- Testimonial author information -->
-                                                <div class="testimonial-author-info">
-                                                    <p class="testimonial-author">John Doe</p>
-                                                    <p class="testimonial-firm">Apple Inc.</p>
-                                                </div>
-                                            </div>
-                                            <!-- /Testimonial author information -->
-                                            <!-- Testimonial Content -->
-                                            <div class="testimonial-content">
-                                                <div class="testimonial-text">
-                                                    <p>"Vivamus porta dapibus tristique. Suspendisse et arcu eget nisi
-                                                        convallis eleifend nec ac lorem.</p>
-                                                </div>
-                                            </div>
-                                            <!-- /Testimonial Content -->
-                                        </div>
-                                        <!-- End of Testimonial 2 -->
-
-                                        <!-- Testimonial 3 -->
-                                        <div class="testimonial-item">
-                                            <!-- Testimonial Author -->
-                                            <div class="testimonial-credits">
-                                                <!-- Picture -->
-                                                <div class="testimonial-picture">
-                                                    <img src="{% static 'images/testimonials/testimonial_photo_3.jpg' %}" alt="">
-                                                </div>
-                                                <!-- /Picture -->
-                                                <!-- Testimonial author information -->
-                                                <div class="testimonial-author-info">
-                                                    <p class="testimonial-author">George McQueen</p>
-                                                    <p class="testimonial-firm">Harmony House</p>
-                                                </div>
-                                            </div>
-                                            <!-- /Testimonial author information -->
-                                            <!-- Testimonial Content -->
-                                            <div class="testimonial-content">
-                                                <div class="testimonial-text">
-                                                    <p>"Aliquam congue auctor lectus sed fermentum. Nulla ultricies
-                                                        tellus quis sapien lacinia egestas."</p>
-                                                </div>
-                                            </div>
-                                            <!-- /Testimonial Content -->
-                                        </div>
-                                        <!-- End of Testimonial 3 -->
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End of Tesimonials -->
-
-                            <!-- Pricing -->
-                            <div class="row">
-                                <div class="col-sm-12 col-md-12">
-                                    <div class="block-title">
-                                        <h3>Pricing</h3>
-                                    </div>
-
-                                    <div class="lm-pricing row clearfix">
-                                        <div class="lm-package-wrap col-md-4 default-col">
-                                            <div class="lm-package">
-                                                <div class="lm-heading-row">
-                                                    <span>Plan 1</span>
-                                                </div>
-                                                <div class="lm-pricing-row">
-                                                    <span>$64</span>
-                                                    <small>per month</small>
-                                                </div>
-
-                                                <div class="lm-button-row">
-                                                    <a href="#" target="_self" class="btn btn-primary">Free Trial</a>
-                                                </div>
-                                                <div class="lm-default-row">
-                                                    Lorem ipsum dolor
-                                                </div>
-                                                <div class="lm-default-row">
-                                                    Pellentesque scelerisque
-                                                </div>
-                                                <div class="lm-default-row">
-                                                    Morbi eu sagittis
-                                                </div>
-                                                <div class="lm-default-row">
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="lm-package-wrap col-md-4 highlight-col ">
-                                            <div class="lm-package">
-                                                <div class="lm-heading-row">
-                                                    <span>Plan 2</span>
-                                                </div>
-                                                <div class="lm-pricing-row">
-                                                    <span>$128</span>
-                                                    <small>per month</small>
-                                                </div>
-
-                                                <div class="lm-button-row">
-                                                    <a href="#" target="_self" class="btn btn-primary">Free Trial</a>
-                                                </div>
-                                                <div class="lm-default-row">
-                                                    Lorem ipsum dolor
-                                                </div>
-                                                <div class="lm-default-row">
-                                                    Pellentesque scelerisque
-                                                </div>
-                                                <div class="lm-default-row">
-                                                    Morbi eu sagittis
-                                                </div>
-                                                <div class="lm-default-row">
-                                                    Donec non diam
-                                                </div>
-                                                <div class="lm-default-row">
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="lm-package-wrap col-md-4 default-col ">
-                                            <div class="lm-package">
-                                                <div class="lm-heading-row">
-                                                    <span>Plan 3</span>
-                                                </div>
-
-                                                <div class="lm-pricing-row">
-                                                    <span>$256</span>
-                                                    <small>per month</small>
-                                                </div>
-
-                                                <div class="lm-button-row">
-                                                    <a href="#" target="_self" class="btn btn-primary">Free Trial</a>
-                                                </div>
-
-                                                <div class="lm-default-row">
-                                                    Lorem ipsum dolor
-                                                </div>
-                                                <div class="lm-default-row">
-                                                    Pellentesque scelerisque
-                                                </div>
-                                                <div class="lm-default-row">
-                                                    Morbi eu sagittis
-                                                </div>
-                                                <div class="lm-default-row">
-                                                    Donec non diam
-                                                </div>
-                                                <div class="lm-default-row">
-                                                    Aenean nec libero
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End of Pricing -->
-                        </div>
-                    </div>
-                </section>
-                <!-- End of Services Subpage -->
-
-
-                <!-- Portfolio Subpage -->
-                <section class="pt-page" data-id="portfolio">
-                    <div class="section-inner custom-page-content">
-                        <div class="page-header color-1">
-                            <h2>Portfolio</h2>
-                        </div>
-                        <div class="page-content">
-
-                            <!-- Portfolio Content -->
-                            <div class="portfolio-content">
-
-                                <!-- Portfolio filter -->
-                                <ul id="portfolio_filters" class="portfolio-filters">
-                                    <li class="active">
-                                        <a class="filter btn btn-sm btn-link active" data-group="all">All</a>
-                                    </li>
-                                    <li>
-                                        <a class="filter btn btn-sm btn-link" data-group="media">Media</a>
-                                    </li>
-                                    <li>
-                                        <a class="filter btn btn-sm btn-link" data-group="illustration">Illustration</a>
-                                    </li>
-                                    <li>
-                                        <a class="filter btn btn-sm btn-link" data-group="video">Video</a>
-                                    </li>
-                                </ul>
-                                <!-- End of Portfolio filter -->
-
-                                <!-- Portfolio Grid -->
-                                <div id="portfolio_grid" class="portfolio-grid portfolio-masonry masonry-grid-3">
-
-                                    <!-- Portfolio Item 1 -->
-                                    <figure class="item" data-groups='["all", "media"]'>
-                                        <a class="ajax-page-load" href="portfolio-1.html">
-                                            <img src="{% static 'images/portfolio/1.jpg' %}" alt="">
-                                            <div>
-                                                <h5 class="name">Project Name</h5>
-                                                <small>Media</small>
-                                                <i class="fa fa-file-text-o"></i>
-                                            </div>
-                                        </a>
-                                    </figure>
-                                    <!-- /Portfolio Item 1 -->
-
-                                    <!-- Portfolio Item 2 -->
-                                    <figure class="item" data-groups='["all", "video"]'>
-                                        <a href="https://player.vimeo.com/video/97102654?autoplay=1"
-                                           title="Praesent Dolor Ex" class="lightbox mfp-iframe">
-                                            <img src="{% static 'images/portfolio/2.jpg' %}" alt="">
-                                            <div>
-                                                <h5 class="name">Project Name</h5>
-                                                <small>Video</small>
-                                                <i class="fa fa-video-camera"></i>
-                                            </div>
-                                        </a>
-                                    </figure>
-                                    <!-- /Portfolio Item 2 -->
-
-                                    <!-- Portfolio Item 3 -->
-                                    <figure class="item" data-groups='["all","illustration"]'>
-                                        <a href="images/portfolio/full/3.jpg" class="lightbox"
-                                           title="Duis Eu Eros Viverra">
-                                            <img src="{% static 'images/portfolio/3.jpg' %}" alt="">
-                                            <div>
-                                                <h5 class="name">Project Name</h5>
-                                                <small>Illustration</small>
-                                                <i class="fa fa-image"></i>
-                                            </div>
-                                        </a>
-                                    </figure>
-                                    <!-- /Portfolio Item 3 -->
-
-                                    <!-- Portfolio Item 4 -->
-                                    <figure class="item" data-groups='["all", "media"]'>
-                                        <a class="ajax-page-load" href="portfolio-2.html">
-                                            <img src="{% static 'images/portfolio/4.jpg' %}" alt="">
-                                            <div>
-                                                <h5 class="name">Project Name</h5>
-                                                <small>Media</small>
-                                                <i class="fa fa-file-text-o"></i>
-                                            </div>
-                                        </a>
-                                    </figure>
-                                    <!-- /Portfolio Item 4 -->
-
-                                    <!-- Portfolio Item 5 -->
-                                    <figure class="item" data-groups='["all", "illustration"]'>
-                                        <a href="images/portfolio/full/5.jpg" class="lightbox"
-                                           title="Aliquam Condimentum Magna Rhoncus">
-                                            <img src="{% static 'images/portfolio/5.jpg' %}" alt="">
-                                            <div>
-                                                <h5 class="name">Project Name</h5>
-                                                <small>Illustration</small>
-                                                <i class="fa fa-image"></i>
-                                            </div>
-                                        </a>
-                                    </figure>
-                                    <!-- /Portfolio Item 5 -->
-
-                                    <!-- Portfolio Item 6 -->
-                                    <figure class="item" data-groups='["all", "media"]'>
-                                        <a class="ajax-page-load" href="portfolio-3.html">
-                                            <img src="{% static 'images/portfolio/6.jpg' %}" alt="">
-                                            <div>
-                                                <h5 class="name">Project Name</h5>
-                                                <small>Media</small>
-                                                <i class="fa fa-file-text-o"></i>
-                                            </div>
-                                        </a>
-                                    </figure>
-                                    <!-- /Portfolio Item 6 -->
-
-                                    <!-- Portfolio Item 7 -->
-                                    <figure class="item" data-groups='["all", "video"]'>
-                                        <a href="https://player.vimeo.com/video/97102654?autoplay=1"
-                                           title="Nulla Facilisi" class="lightbox mfp-iframe">
-                                            <img src="{% static 'images/portfolio/7.jpg' %}" alt="">
-                                            <div>
-                                                <h5 class="name">Project Name</h5>
-                                                <small>Video</small>
-                                                <i class="fa fa-video-camera"></i>
-                                            </div>
-                                        </a>
-                                    </figure>
-                                    <!-- /Portfolio Item 7 -->
-
-                                    <!-- Portfolio Item 8 -->
-                                    <figure class="item" data-groups='["all",  "media"]'>
-                                        <a class="ajax-page-load" href="portfolio-4.html">
-                                            <img src="{% static 'images/portfolio/8.jpg' %}" alt="">
-                                            <div>
-                                                <h5 class="name">Project Name</h5>
-                                                <small>Media</small>
-                                                <i class="fa fa-file-text-o"></i>
-                                            </div>
-                                        </a>
-                                    </figure>
-                                    <!-- /Portfolio Item 8 -->
-
-                                    <!-- Portfolio Item 9 -->
-                                    <figure class="item" data-groups='["all","illustration"]'>
-                                        <a href="images/portfolio/full/9.jpg" class="lightbox"
-                                           title="Mauris Neque Dolor">
-                                            <img src="{% static 'images/portfolio/9.jpg' %}" alt="">
-                                            <div>
-                                                <h5 class="name">Project Name</h5>
-                                                <small>Illustration</small>
-                                                <i class="fa fa-image"></i>
-                                            </div>
-                                        </a>
-                                    </figure>
-                                    <!-- /Portfolio Item 9 -->
-
-                                    <!-- Portfolio Item 10 -->
-                                    <figure class="item" data-groups='["all", "video"]'>
-                                        <a href="https://player.vimeo.com/video/97102654?autoplay=1"
-                                           title="Donec Lectus Arcu" class="lightbox mfp-iframe">
-                                            <img src="{% static 'images/portfolio/10.jpg' %}" alt="">
-                                            <div>
-                                                <h5 class="name">Project Name</h5>
-                                                <small>Video</small>
-                                                <i class="fa fa-video-camera"></i>
-                                            </div>
-                                        </a>
-                                    </figure>
-                                    <!-- /Portfolio Item 10 -->
-
-                                    <!-- Portfolio Item 11 -->
-                                    <figure class="item" data-groups='["all","illustration"]'>
-                                        <a href="images/portfolio/full/11.jpg" class="lightbox"
-                                           title="Duis Eu Eros Viverra">
-                                            <img src="{% static 'images/portfolio/11.jpg' %}" alt="">
-                                            <div>
-                                                <h5 class="name">Project Name</h5>
-                                                <small>Illustration</small>
-                                                <i class="fa fa-image"></i>
-                                            </div>
-                                        </a>
-                                    </figure>
-                                    <!-- /Portfolio Item 11 -->
-
-                                    <!-- Portfolio Item 12 -->
-                                    <figure class="item" data-groups='["all","media"]'>
-                                        <a class="ajax-page-load" href="portfolio-5.html">
-                                            <img src="{% static 'images/portfolio/12.jpg' %}" alt="">
-                                            <div>
-                                                <h5 class="name">Project Name</h5>
-                                                <small>Media</small>
-                                                <i class="fa fa-file-text-o"></i>
-                                            </div>
-                                        </a>
-                                    </figure>
-                                    <!-- /Portfolio Item 12 -->
-                                </div>
-                                <!-- /Portfolio Grid -->
-
-                            </div>
-                            <!-- /Portfolio Content -->
-                        </div>
-                    </div>
-                </section>
-                <!-- /Portfolio Subpage -->
-
-                <!-- Blog Subpage -->
-                <section class="pt-page" data-id="blog">
-                    <div class="section-inner custom-page-content">
-                        <div class="page-header color-1">
-                            <h2>Blog</h2>
-                        </div>
-                        <div class="page-content">
-
-                            <!-- Blog Posts Grid -->
-                            <div class="blog-masonry two-columns">
-                                <!-- Blog Post 1 -->
-                                <div class="item">
-                                    <div class="blog-card">
-                                        <div class="media-block">
-                                            <a href="blog-post-1.html">
-                                                <img class="post-image img-responsive" src="{% static 'images/blog/blog_post_1.jpg' %}"
-                                                     alt="blog-post-1"/>
-                                                <div class="mask"></div>
-                                                <div class="post-date"><span class="day">6</span><span
-                                                        class="month">Dec</span><!--<span class="year">2016</span>-->
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="post-info">
-                                            <ul class="category">
-                                                <li><a href="#">Travel</a></li>
-                                            </ul>
-                                            <a href="blog-post-1.html"><h4 class="blog-item-title">Bootstrap is the Most
-                                                Popular Framework</h4></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End of Blog Post 1 -->
-
-                                <!-- Blog Post 2 -->
-                                <div class="item">
-                                    <div class="blog-card">
-                                        <div class="media-block">
-                                            <a href="blog-post-1.html">
-                                                <img class="post-image img-responsive" src="{% static 'images/blog/blog_post_2.jpg' %}"
-                                                     alt="blog-post-2"/>
-                                                <div class="mask"></div>
-                                                <div class="post-date"><span class="day">3</span><span
-                                                        class="month">Nov</span><!--<span class="year">2016</span>-->
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="post-info">
-                                            <ul class="category">
-                                                <li><a href="#">jQuery</a></li>
-                                            </ul>
-                                            <a href="blog-post-1.html"><h4 class="blog-item-title">One Framework, Every
-                                                Device</h4></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End of Blog Post 2 -->
-
-                                <!-- Blog Post 3 -->
-                                <div class="item">
-                                    <div class="blog-card">
-                                        <div class="media-block">
-                                            <a href="blog-post-1.html">
-                                                <img class="post-image img-responsive" src="{% static 'images/blog/blog_post_3.jpg' %}"
-                                                     alt="blog-post-3"/>
-                                                <div class="mask"></div>
-                                                <div class="post-date"><span class="day">12</span><span class="month">Oct</span>
-                                                    <!--<span class="year">2016</span>--></div>
-                                            </a>
-                                        </div>
-                                        <div class="post-info">
-                                            <ul class="category">
-                                                <li><a href="#">Sport</a></li>
-                                            </ul>
-                                            <a href="blog-post-1.html"><h4 class="blog-item-title">Designed for
-                                                Everyone, Everywhere</h4></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End of Blog Post 3 -->
-
-                                <!-- Blog Post 4 -->
-                                <div class="item">
-                                    <div class="blog-card">
-                                        <div class="media-block">
-                                            <a href="blog-post-1.html">
-                                                <img class="post-image img-responsive" src="{% static 'images/blog/blog_post_4.jpg' %}"
-                                                     alt="blog-post-4"/>
-                                                <div class="mask"></div>
-                                                <div class="post-date"><span class="day">18</span><span class="month">Aug</span>
-                                                    <!--<span class="year">2016</span>--></div>
-                                            </a>
-                                        </div>
-                                        <div class="post-info">
-                                            <ul class="category">
-                                                <li><a href="#">CSS</a></li>
-                                            </ul>
-                                            <a href="blog-post-1.html"><h4 class="blog-item-title">An Introduction To
-                                                PostCSS</h4></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End of Blog Post 4 -->
-
-                                <!-- Blog Post 5 -->
-                                <div class="item">
-                                    <div class="blog-card">
-                                        <div class="media-block">
-                                            <a href="blog-post-1.html">
-                                                <img class="post-image img-responsive" src="{% static 'images/blog/blog_post_5.jpg' %}"
-                                                     alt="blog-post-5"/>
-                                                <div class="mask"></div>
-                                                <div class="post-date"><span class="day">2</span><span
-                                                        class="month">Jul</span><!--<span class="year">2016</span>-->
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="post-info">
-                                            <ul class="category">
-                                                <li><a href="#">CSS3</a></li>
-                                            </ul>
-                                            <a href="blog-post-1.html"><h4 class="blog-item-title">Original and
-                                                Innovative Web Layouts</h4></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End of Blog Post 5 -->
-
-                                <!-- Blog Post 6 -->
-                                <div class="item">
-                                    <div class="blog-card">
-                                        <div class="media-block">
-                                            <a href="blog-post-1.html">
-                                                <img class="post-image img-responsive" src="{% static 'images/blog/blog_post_6.jpg' %}"
-                                                     alt="blog-post-6"/>
-                                                <div class="mask"></div>
-                                                <div class="post-date"><span class="day">8</span><span
-                                                        class="month">May</span><!--<span class="year">2016</span>-->
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="post-info">
-                                            <ul class="category">
-                                                <li><a href="#">HTML5</a></li>
-                                            </ul>
-                                            <a href="blog-post-1.html"><h4 class="blog-item-title">Creative and
-                                                Innovative Navigation Designs</h4></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End of Blog Post 6 -->
-
-                                <!-- Blog Post 7 -->
-                                <div class="item">
-                                    <div class="blog-card">
-                                        <div class="media-block">
-                                            <a href="blog-post-1.html">
-                                                <img class="post-image img-responsive" src="{% static 'images/blog/blog_post_7.jpg' %}"
-                                                     alt="blog-post-7"/>
-                                                <div class="mask"></div>
-                                                <div class="post-date"><span class="day">7</span><span
-                                                        class="month">Apr</span><!--<span class="year">2016</span>-->
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="post-info">
-                                            <ul class="category">
-                                                <li><a href="#">Design</a></li>
-                                            </ul>
-                                            <a href="blog-post-1.html"><h4 class="blog-item-title">Navigation for
-                                                Mega-Sites</h4></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End of Blog Post 7 -->
-
-                                <!-- Blog Post 8 -->
-                                <div class="item">
-                                    <div class="blog-card">
-                                        <div class="media-block">
-                                            <a href="blog-post-1.html">
-                                                <img class="post-image img-responsive" src="{% static 'images/blog/blog_post_8.jpg' %}"
-                                                     alt="blog-post-8"/>
-                                                <div class="mask"></div>
-                                                <div class="post-date"><span class="day">21</span><span class="month">Mar</span>
-                                                    <!--<span class="year">2016</span>--></div>
-                                            </a>
-                                        </div>
-                                        <div class="post-info">
-                                            <ul class="category">
-                                                <li><a href="#">CSS3</a></li>
-                                            </ul>
-                                            <a href="blog-post-1.html"><h4 class="blog-item-title">Front-End Challenge
-                                                Accepted: CSS 3D Cube</h4></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End of Blog Post 8 -->
-                            </div>
-                            <!-- Blog Posts Grid -->
-                        </div>
-                    </div>
-                </section>
-                <!-- /Blog Subpage -->
-
-
+    {% load static %}
+
+
+
+    <div id="page" class="page">
+        <!-- Header -->
+        <header id="site_header" class="header mobile-menu-hide">
+            <div class="header-content">
+                <div class="site-title-block mobile-hidden">
+                    <div class="site-title">Mavic<span>Air 2</span></div>
+                </div>
+
+                <!-- Navigation -->
+                <div class="site-nav">
+                    <!-- Main menu -->
+                    <ul id="nav" class="site-main-menu">
+                        <li>
+                            <a class="pt-trigger" href="#home" data-animation="62">Home</a>
+                            <!-- href value = data-id without # of .pt-page. -->
+                        </li>
+                        <li>
+                            <a class="pt-trigger" href="#details" data-animation="62">Specification</a>
+                        </li>
+                        <li>
+                            <a class="pt-trigger" href="#photos" data-animation="62">Photos</a>
+                        </li>
+                        <li>
+                            <a class="pt-trigger" href="#comparison" data-animation="62">Comparison</a>
+                        </li>
+                    </ul>
+                    <!-- /Main menu -->
+                </div>
+                <!-- Navigation -->
             </div>
+        </header>
+        <!-- /Header -->
+
+        <!-- Main Content -->
+        <div id="main" class="site-main">
+            <!-- Page changer wrapper -->
+            <div class="pt-wrapper">
+                <!-- Subpages -->
+                <div class="subpages">
+
+                    <!-- Home Subpage -->
+                    <section class="pt-page" data-id="home">
+
+                        <div class="section-inner start-page-content">
+                            <div class="page-header">
+                                <div class="row">
+                                    <div class="col-sm-4 col-md-4 col-lg-4">
+                                        <div class="photo">
+                                            <img src="{{ drone.image.url }}" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-8 col-md-8 col-lg-8">
+                                        <div class="title-block">
+                                            <h1>{{ drone.name }}</h1>
+                                            <div class="owl-carousel text-rotation">
+                                                <div class="item">
+                                                    <div class="sp-subtitle">{{ drone.model }}</div>
+                                                </div>
+                                                <div class="item">
+                                                    <div class="sp-subtitle">Mavic Air</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="social-links">
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
+                                            <a href="#"><i class="fa fa-facebook"></i></a>
+                                            <a href="#"><i class="fa fa-instagram"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="page-content">
+                                <div class="row">
+
+                                    <div class="col-sm-6 col-md-6 col-lg-6">
+                                        <div class="about-me">
+                                            <div class="block-title">
+                                                <h3>About <span>Me</span></h3>
+                                            </div>
+                                            <p>It features a 48MP camera capable of shooting 4K video at 60fps, a 3-axis
+                                                gimbal for stabilization, and a 34-minute flight time. The drone also
+                                                includes advanced features such as obstacle avoidance, intelligent
+                                                tracking, and HDR video capabilities. Overall, the Mavic Air 2 is an
+                                                excellent option for hobbyists and professionals alike who are looking
+                                                for a portable and high-performing drone.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-6 col-md-6 col-lg-6">
+                                        <ul class="info-list">
+                                            <li><span class="title">Weight:</span><span
+                                                    class="value">{{ drone.weight }}gr</span></li>
+                                            <li><span class="title">Price:</span><span
+                                                    class="value">{{ drone.price }}$</span></li>
+                                            <li><span class="title">Max Speed:</span><span
+                                                    class="value">{{ drone.horizontal_speed }} m/s</span></li>
+                                            <li><span class="title">Flight Duration:</span><span
+                                                    class="value">{{ battery.flight_time }}mins</span></li>
+                                            <li><span class="title">Release Date</span><span
+                                                    class="value">{{ drone.release_date }}</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- End of Home Subpage -->
+
+                    <!-- Resume Subpage -->
+                    <section class="pt-page" data-id="details">
+                        <div class="section-inner custom-page-content">
+                            <div class="page-header color-1">
+                                <h2>Specifications</h2>
+                            </div>
+                            <div class="page-content">
+
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-6 col-lg-6">
+                                        <div class="block">
+                                            <div class="block-title">
+                                                <h3>Performance</h3>
+                                            </div>
+
+                                            <div class="timeline">
+                                                <!-- Education 1 -->
+                                                <div class="timeline-item">
+                                                    <h4 class="item-title">Limitations</h4>
+                                                    {% if drone.ascent_speed %}
+                                                        <p class="item-description"><u>Ascent
+                                                            Speed:</u> {{ drone.ascent_speed }} m/s</p>
+                                                    {% endif %}
+                                                    {% if drone.descent_speed %}
+                                                        <p class="item-description"><u>Descent
+                                                            Speed:</u> {{ drone.descent_speed }} m/s</p>
+                                                    {% endif %}
+                                                    {% if drone.horizontal_speed %}
+                                                        <p class="item-description"><u>Horizontal
+                                                            Speed:</u> {{ drone.horizontal_speed }} m/s</p>
+                                                    {% endif %}
+                                                    {% if drone.takeoff_altitude %}
+                                                        <p class="item-description"><u>Takeoff
+                                                            Altitude:</u> {{ drone.takeoff_altitude }} meters</p>
+                                                    {% endif %}
+                                                    {% if drone.flight_time %}
+                                                        <p class="item-description"><u>Flight
+                                                            Time:</u> {{ drone.flight_time }}</p>
+                                                    {% endif %}
+                                                    {% if drone.hovering_time %}
+                                                        <p class="item-description"><u> Hovering
+                                                            Time:</u> {{ drone.hovering_time }}</p>
+                                                    {% endif %}
+                                                    {% if drone.max_flight_distance %}
+                                                        <p class="item-description"><u> Flight
+                                                            Distance:</u> {{ drone.max_flight_distance }} km</p>
+                                                    {% endif %}
+                                                    {% if drone.tilt_angle %}
+                                                        <p class="item-description"><u> Tilt
+                                                            Angle:</u> {{ drone.tilt_angle }}</p>
+                                                    {% endif %}
+                                                    {% if drone.operating_temperature %}
+                                                        <p class="item-description"><u>Operating
+                                                            Temperature:</u> {{ drone.operating_temperature }}</p>
+                                                    {% endif %}
+                                                    {% if drone.wind_speed_resistance %}
+                                                        <p class="item-description"><u> Wind Speed
+                                                            Resistance:</u> {{ drone.wind_speed_resistance }}</p>
+                                                    {% endif %}
+                                                    <p class="item-description"><u>GPS System: GPS + Galileo +
+                                                        BeiDou</u></p>
+                                                    {% if drone.internal_storage %}
+                                                        <p class="item-description"><u>Internal
+                                                            Storage:</u> {{ drone.internal_storage }} GB</p>
+                                                    {% endif %}
+                                                </div>
+                                                <!-- / Education 1 -->
+
+                                                <!-- Education 2 -->
+                                                <div class="timeline-item">
+                                                    <h4 class="item-title">Battery</h4>
+                                                    {% if battery.capacity %}
+                                                        <p class="item-description">
+                                                            <u>Capacity:</u> {{ battery.capacity }}
+                                                            mah</p>
+                                                    {% endif %}
+                                                    {% if battery.weight %}
+                                                        <p class="item-description"><u>Weight:</u> {{ battery.weight }}
+                                                            gr</p>
+                                                    {% endif %}
+                                                    {% if battery.type %}
+                                                        <p class="item-description"><u>Type:</u> {{ battery.type }}</p>
+                                                    {% endif %}
+                                                    {% if battery.charging_temperature %}
+                                                        <p class="item-description"><u>Charging
+                                                            Temperature:</u> {{ battery.charging_temperature }}</p>
+                                                    {% endif %}
+                                                    {% if battery.charging_time %}
+                                                        <p class="item-description"><u>Charging
+                                                            Time:</u> {{ battery.charging_time }} mins</p>
+                                                    {% endif %}
+
+                                                </div>
+                                                <!-- / Education 2 -->
+
+                                                <!-- Education 3 -->
+                                                <div class="timeline-item">
+                                                    <h4 class="item-title">Remote Controller</h4>
+                                                    {% if controller.max_operating_time %}
+                                                        <p class="item-description"><u>Max Operating
+                                                            Time:</u> {{ controller.max_operating_time }}</p>
+                                                    {% endif %}
+                                                    {% if controller.max_supported_mobile_device_size %}
+                                                        <p class="item-description"><u>Max Supported Mobile Device
+                                                            Size:</u> {{ controller.max_supported_mobile_device_size | linebreaks }}
+                                                        </p>
+                                                    {% endif %}
+                                                    {% if controller.transmitter_power %}
+                                                        <p class="item-description"><u>Transmitter
+                                                            Power:</u> {{ controller.transmitter_power | linebreaks }}
+                                                        </p>
+                                                    {% endif %}
+                                                </div>
+                                                <div class="timeline-item">
+                                                    <h4 class="item-title">Video Transmission</h4>
+                                                    {% if transmission.live_view_quality %}
+                                                        <p class="item-description"><u>Live View
+                                                            Quality:</u> {{ transmission.live_view_quality }}</p>
+                                                    {% endif %}
+                                                    {% if transmission.operating_frequency %}
+                                                        <p class="item-description"><u>Operating
+                                                            Frequency:</u> {{ transmission.operating_frequency }}</p>
+                                                    {% endif %}
+                                                    {% if transmission.transmission_distance_free_interference %}
+                                                        <p class="item-description"><u>Max Transmission Distance(free of
+                                                            interference):</u> {{ transmission.transmission_distance_free_interference | linebreaks }}
+                                                        </p>
+                                                    {% endif %}
+                                                    {% if transmission.transmission_distance_interference %}
+                                                        <p class="item-description"><u>Max Transmission Distance(with
+                                                            interference):</u> {{ transmission.transmission_distance_interference | linebreaks }}
+                                                        </p>
+                                                    {% endif %}
+                                                    {% if transmission.max_download_speed %}
+                                                        <p class="item-description"><u>Max Download
+                                                            Speed:</u> {{ transmission.max_download_speed }}</p>
+                                                    {% endif %}
+                                                    {% if transmission.lowest_latency %}
+                                                        <p class="item-description"><u>Lowest
+                                                            Latency:</u> {{ transmission.lowest_latency }}</p>
+                                                    {% endif %}
+                                                </div>
+                                                <!-- / Education 3 -->
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-6 col-md-6 col-lg-6">
+                                        <div class="block">
+                                            <div class="block-title">
+                                                <h3>Hardware</h3>
+                                            </div>
+
+                                            <div class="timeline">
+                                                <!-- Experience 1 -->
+                                                <div class="timeline-item">
+                                                    <h4 class="item-title">Camera</h4>
+                                                    {% if camera.image_sensor %}
+                                                        <p class="item-description"><u>Image
+                                                            Sensor:</u> {{ camera.image_sensor | linebreaks }}</p>
+                                                    {% endif %}
+                                                    {% if camera.lens %}
+                                                        <p class="item-description">
+                                                            <u>Lens:</u> {{ camera.lens | linebreaks }}</p>
+                                                    {% endif %}
+                                                    {% if camera.iso_range %}
+                                                        <p class="item-description"><u>ISO
+                                                            Range:</u> {{ camera.iso_range | linebreaks }}</p>
+                                                    {% endif %}
+                                                    {% if camera.shutter_speed %}
+                                                        <p class="item-description"><u>Shutter
+                                                            Speed:</u> {{ camera.shutter_speed | linebreaks }}</p>
+                                                    {% endif %}
+                                                    {% if camera.max_image_size %}
+                                                        <p class="item-description"><u>Max Image
+                                                            Size:</u> {{ camera.max_image_size | linebreaks }}</p>
+                                                    {% endif %}
+                                                    {% if camera.still_photography_modes %}
+                                                        <p class="item-description"><u>Still Photography
+                                                            Modes:</u> {{ camera.still_photography_modes | linebreaks }}
+                                                        </p>
+                                                    {% endif %}
+                                                    {% if camera.photo_format %}
+                                                        <p class="item-description"><u>Photo
+                                                            Format:</u> {{ camera.photo_format | linebreaks }}</p>
+                                                    {% endif %}
+                                                    {% if camera.video_resolution %}
+                                                        <p class="item-description"><u>Video
+                                                            Resolution:</u> {{ camera.video_resolution | linebreaks }}
+                                                        </p>
+                                                    {% endif %}
+                                                    {% if camera.video_format %}
+                                                        <p class="item-description"><u>Video
+                                                            Format:</u> {{ camera.video_format | linebreaks }}</p>
+                                                    {% endif %}
+                                                    {% if camera.max_video_bitrate %}
+                                                        <p class="item-description"><u>Max Video
+                                                            Bitrate:</u> {{ camera.max_video_bitrate }}</p>
+                                                    {% endif %}
+                                                    {% if camera.digital_zoom %}
+                                                        <p class="item-description"><u>Digital
+                                                            Zoom:</u> {{ camera.digital_zoom }}</p>
+                                                    {% endif %}
+                                                </div>
+                                                <!-- / Experience 1 -->
+
+                                                <!-- / Experience 2 -->
+                                                <div class="timeline-item">
+                                                    <h4 class="item-title">Sensors</h4>
+                                                    {% if sensor.sensor_type %}
+                                                        <p class="item-description"><u>Sensors
+                                                            Type:</u> {{ sensor.sensor_type | linebreaks }}</p>
+                                                    {% endif %}
+                                                    {% if sensor.forward %}
+                                                        <p class="item-description"><u>Forward:</u> {{ sensor.forward | linebreaks }}
+                                                        </p>
+                                                    {% endif %}
+                                                    {% if sensor.backward %}
+                                                        <p class="item-description">
+                                                            <u>Backward:</u> {{ sensor.backward | linebreaks }}</p>
+                                                    {% endif %}
+                                                    {% if sensor.lateral %}
+                                                        <p class="item-description"><u>Lateral:</u> {{ sensor.lateral | linebreaks }}
+                                                        </p>
+                                                    {% endif %}
+                                                    {% if sensor.upward %}
+                                                        <p class="item-description"><u>Upward:</u> {{ sensor.upward | linebreaks }}
+                                                        </p>
+                                                    {% endif %}
+                                                    {% if sensor.downward %}
+                                                        <p class="item-description">
+                                                            <u>Downward:</u> {{ sensor.downward | linebreaks }}</p>
+                                                    {% endif %}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-6 col-lg-6">
+                                        <div class="block">
+                                            <div class="block-title">
+                                                <h3>Design <span>Skills</span></h3>
+                                            </div>
+
+                                            <div class="skills-info">
+                                                <h4>Web Design</h4>
+                                                <div class="skill-container">
+                                                    <div class="skill-percentage skill-1"></div>
+                                                </div>
+
+                                                <h4>Graphic Design</h4>
+                                                <div class="skill-container">
+                                                    <div class="skill-percentage skill-2"></div>
+                                                </div>
+
+                                                <h4>Print Design</h4>
+                                                <div class="skill-container">
+                                                    <div class="skill-percentage skill-3"></div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-6 col-md-6 col-lg-6">
+                                        <div class="block">
+                                            <div class="block-title">
+                                                <h3>Coding <span>Skills</span></h3>
+                                            </div>
+
+                                            <div class="skills-info">
+                                                <h4>HTML5</h4>
+                                                <div class="skill-container">
+                                                    <div class="skill-percentage skill-4"></div>
+                                                </div>
+
+                                                <h4>CSS3/LESS/SASS</h4>
+                                                <div class="skill-container">
+                                                    <div class="skill-percentage skill-5"></div>
+                                                </div>
+
+                                                <h4>jQuery</h4>
+                                                <div class="skill-container">
+                                                    <div class="skill-percentage skill-6"></div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- Download Resume Button -->
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-12 col-lg-12">
+                                        <div class="block">
+                                            <div class="center download-resume">
+                                                <a href="#comparison" class="btn btn-secondary">Compare</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End of Download Resume Button -->
+
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <!-- End of Resume Subpage -->
+
+                    <!-- Services Subpage -->
+                    <section class="pt-page" data-id="comparison">
+                        <div class="section-inner custom-page-content">
+                            <div class="page-header color-1">
+                                <h2>Services</h2>
+                            </div>
+                            <div class="page-content">
+                                <!-- My Services -->
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-12">
+                                        <div class="block-title">
+                                            <h3>My <span>Services</span></h3>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="service-block">
+                                            <div class="service-info">
+                                                <!--<i class="service-icon fa fa-shopping-cart"></i>-->
+                                                <div class="service-image">
+                                                    <img src="{% static 'images/service/web_design_icon.png' %}"
+                                                         alt="Responsive Design"
+                                                         class="mCS_img_loaded">
+                                                </div>
+                                                <h4>Web Design</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                                    eiusmod
+                                                    tempor.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="service-block">
+                                            <div class="service-info">
+                                                <div class="service-image">
+                                                    <img src="{% static 'images/service/photography_icon.png' %}"
+                                                         alt="Photography"
+                                                         class="mCS_img_loaded">
+                                                </div>
+                                                <h4>Photography</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                                    eiusmod
+                                                    tempor.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="service-block">
+                                            <div class="service-info">
+                                                <div class="service-image">
+                                                    <img src="{% static 'images/service/creativity_icon.png' %}"
+                                                         alt="Creativity"
+                                                         class="mCS_img_loaded">
+                                                </div>
+                                                <h4>Management</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                                    eiusmod
+                                                    tempor.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="service-block">
+                                            <div class="service-info">
+                                                <div class="service-image">
+                                                    <img src="{% static 'images/service/advetising_icon.png' %}"
+                                                         alt="Advetising"
+                                                         class="mCS_img_loaded">
+                                                </div>
+                                                <h4>Advetising</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                                    eiusmod
+                                                    tempor.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End of My Services -->
+
+                                <!-- Clients -->
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-12">
+                                        <div class="block-title">
+                                            <h3>Clients</h3>
+                                        </div>
+
+                                        <div class="col-sm-4 col-md-2 subpage-block">
+                                            <div class="client-block">
+                                                <a href="#" target="_blank"><img
+                                                        src="{% static 'images/clients/client_1.png' %}"
+                                                        alt="image" class="mCS_img_loaded"></a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-4 col-md-2 subpage-block">
+                                            <div class="client-block">
+                                                <a href="#" target="_blank"><img
+                                                        src="{% static 'images/clients/client_2.png' %}"
+                                                        alt="image" class="mCS_img_loaded"></a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-4 col-md-2 subpage-block">
+                                            <div class="client-block">
+                                                <a href="#" target="_blank"><img
+                                                        src="{% static 'images/clients/client_3.png' %}"
+                                                        alt="image" class="mCS_img_loaded"></a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-4 col-md-2 subpage-block">
+                                            <div class="client-block">
+                                                <a href="#" target="_blank"><img
+                                                        src="{% static 'images/clients/client_4.png' %}"
+                                                        alt="image" class="mCS_img_loaded"></a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-4 col-md-2 subpage-block">
+                                            <div class="client-block">
+                                                <a href="#" target="_blank"><img
+                                                        src="{% static 'images/clients/client_5.png' %}"
+                                                        alt="image" class="mCS_img_loaded"></a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-4 col-md-2 subpage-block">
+                                            <div class="client-block">
+                                                <a href="#" target="_blank"><img
+                                                        src="{% static 'images/clients/client_6.png' %}"
+                                                        alt="image" class="mCS_img_loaded"></a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- End of Clients -->
+
+                                <!-- Testimonials -->
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-12">
+                                        <div class="block-title">
+                                            <h3>Testimonials</h3>
+                                        </div>
+
+
+                                        <div class="testimonials owl-carousel block">
+                                            <!-- Testimonial 1 -->
+                                            <div class="testimonial-item">
+                                                <!-- Testimonial Author -->
+                                                <div class="testimonial-credits">
+                                                    <!-- Picture -->
+                                                    <div class="testimonial-picture">
+                                                        <img src="{% static 'images/testimonials/testimonial_photo_1.jpg' %}"
+                                                             alt="">
+                                                    </div>
+                                                    <!-- /Picture -->
+                                                    <!-- Testimonial author information -->
+                                                    <div class="testimonial-author-info">
+                                                        <p class="testimonial-author">Maria Richardson</p>
+                                                        <p class="testimonial-firm">Lindsley's Lumber</p>
+                                                    </div>
+                                                </div>
+                                                <!-- /Testimonial author information -->
+                                                <!-- Testimonial Content -->
+                                                <div class="testimonial-content">
+                                                    <div class="testimonial-text">
+                                                        <p>"Phasellus eu nunc tincidunt, ultricies elit vitae, pretium
+                                                            eros.
+                                                            Sed sed ipsum sed massa."</p>
+                                                    </div>
+                                                </div>
+                                                <!-- /Testimonial Content -->
+                                            </div>
+                                            <!-- End of Testimonial 1 -->
+
+                                            <!-- Testimonial 2 -->
+                                            <div class="testimonial-item">
+                                                <!-- Testimonial Author -->
+                                                <div class="testimonial-credits">
+                                                    <!-- Picture -->
+                                                    <div class="testimonial-picture">
+                                                        <img src="{% static 'images/testimonials/testimonial_photo_2.jpg' %}"
+                                                             alt="">
+                                                    </div>
+                                                    <!-- /Picture -->
+                                                    <!-- Testimonial author information -->
+                                                    <div class="testimonial-author-info">
+                                                        <p class="testimonial-author">John Doe</p>
+                                                        <p class="testimonial-firm">Apple Inc.</p>
+                                                    </div>
+                                                </div>
+                                                <!-- /Testimonial author information -->
+                                                <!-- Testimonial Content -->
+                                                <div class="testimonial-content">
+                                                    <div class="testimonial-text">
+                                                        <p>"Vivamus porta dapibus tristique. Suspendisse et arcu eget
+                                                            nisi
+                                                            convallis eleifend nec ac lorem.</p>
+                                                    </div>
+                                                </div>
+                                                <!-- /Testimonial Content -->
+                                            </div>
+                                            <!-- End of Testimonial 2 -->
+
+                                            <!-- Testimonial 3 -->
+                                            <div class="testimonial-item">
+                                                <!-- Testimonial Author -->
+                                                <div class="testimonial-credits">
+                                                    <!-- Picture -->
+                                                    <div class="testimonial-picture">
+                                                        <img src="{% static 'images/testimonials/testimonial_photo_3.jpg' %}"
+                                                             alt="">
+                                                    </div>
+                                                    <!-- /Picture -->
+                                                    <!-- Testimonial author information -->
+                                                    <div class="testimonial-author-info">
+                                                        <p class="testimonial-author">George McQueen</p>
+                                                        <p class="testimonial-firm">Harmony House</p>
+                                                    </div>
+                                                </div>
+                                                <!-- /Testimonial author information -->
+                                                <!-- Testimonial Content -->
+                                                <div class="testimonial-content">
+                                                    <div class="testimonial-text">
+                                                        <p>"Aliquam congue auctor lectus sed fermentum. Nulla ultricies
+                                                            tellus quis sapien lacinia egestas."</p>
+                                                    </div>
+                                                </div>
+                                                <!-- /Testimonial Content -->
+                                            </div>
+                                            <!-- End of Testimonial 3 -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End of Tesimonials -->
+
+                                <!-- Pricing -->
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-12">
+                                        <div class="block-title">
+                                            <h3>Pricing</h3>
+                                        </div>
+
+                                        <div class="lm-pricing row clearfix">
+                                            <div class="lm-package-wrap col-md-4 default-col">
+                                                <div class="lm-package">
+                                                    <div class="lm-heading-row">
+                                                        <span>Plan 1</span>
+                                                    </div>
+                                                    <div class="lm-pricing-row">
+                                                        <span>$64</span>
+                                                        <small>per month</small>
+                                                    </div>
+
+                                                    <div class="lm-button-row">
+                                                        <a href="#" target="_self" class="btn btn-primary">Free
+                                                            Trial</a>
+                                                    </div>
+                                                    <div class="lm-default-row">
+                                                        Lorem ipsum dolor
+                                                    </div>
+                                                    <div class="lm-default-row">
+                                                        Pellentesque scelerisque
+                                                    </div>
+                                                    <div class="lm-default-row">
+                                                        Morbi eu sagittis
+                                                    </div>
+                                                    <div class="lm-default-row">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="lm-package-wrap col-md-4 highlight-col ">
+                                                <div class="lm-package">
+                                                    <div class="lm-heading-row">
+                                                        <span>Plan 2</span>
+                                                    </div>
+                                                    <div class="lm-pricing-row">
+                                                        <span>$128</span>
+                                                        <small>per month</small>
+                                                    </div>
+
+                                                    <div class="lm-button-row">
+                                                        <a href="#" target="_self" class="btn btn-primary">Free
+                                                            Trial</a>
+                                                    </div>
+                                                    <div class="lm-default-row">
+                                                        Lorem ipsum dolor
+                                                    </div>
+                                                    <div class="lm-default-row">
+                                                        Pellentesque scelerisque
+                                                    </div>
+                                                    <div class="lm-default-row">
+                                                        Morbi eu sagittis
+                                                    </div>
+                                                    <div class="lm-default-row">
+                                                        Donec non diam
+                                                    </div>
+                                                    <div class="lm-default-row">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="lm-package-wrap col-md-4 default-col ">
+                                                <div class="lm-package">
+                                                    <div class="lm-heading-row">
+                                                        <span>Plan 3</span>
+                                                    </div>
+
+                                                    <div class="lm-pricing-row">
+                                                        <span>$256</span>
+                                                        <small>per month</small>
+                                                    </div>
+
+                                                    <div class="lm-button-row">
+                                                        <a href="#" target="_self" class="btn btn-primary">Free
+                                                            Trial</a>
+                                                    </div>
+
+                                                    <div class="lm-default-row">
+                                                        Lorem ipsum dolor
+                                                    </div>
+                                                    <div class="lm-default-row">
+                                                        Pellentesque scelerisque
+                                                    </div>
+                                                    <div class="lm-default-row">
+                                                        Morbi eu sagittis
+                                                    </div>
+                                                    <div class="lm-default-row">
+                                                        Donec non diam
+                                                    </div>
+                                                    <div class="lm-default-row">
+                                                        Aenean nec libero
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End of Pricing -->
+                            </div>
+                        </div>
+                    </section>
+                    <!-- End of Services Subpage -->
+
+
+                    <!-- Portfolio Subpage -->
+                    <section class="pt-page" data-id="photos">
+                        <div class="section-inner custom-page-content">
+                            <div class="page-header color-1">
+                                <h2>Portfolio</h2>
+                            </div>
+                            <div class="page-content">
+
+                                <!-- Portfolio Content -->
+                                <div class="portfolio-content">
+
+                                    <!-- Portfolio filter -->
+                                    <ul id="portfolio_filters" class="portfolio-filters">
+                                        <li class="active">
+                                            <a class="filter btn btn-sm btn-link active" data-group="all">All</a>
+                                        </li>
+                                        <li>
+                                            <a class="filter btn btn-sm btn-link" data-group="media">Media</a>
+                                        </li>
+                                        <li>
+                                            <a class="filter btn btn-sm btn-link"
+                                               data-group="illustration">Illustration</a>
+                                        </li>
+                                        <li>
+                                            <a class="filter btn btn-sm btn-link" data-group="video">Video</a>
+                                        </li>
+                                    </ul>
+                                    <!-- End of Portfolio filter -->
+
+                                    <!-- Portfolio Grid -->
+                                    <div id="portfolio_grid" class="portfolio-grid portfolio-masonry masonry-grid-3">
+
+                                        <!-- Portfolio Item 1 -->
+                                        <figure class="item" data-groups='["all", "media"]'>
+                                            <a class="ajax-page-load" href="portfolio-1.html">
+                                                <img src="{% static 'images/portfolio/1.jpg' %}" alt="">
+                                                <div>
+                                                    <h5 class="name">Project Name</h5>
+                                                    <small>Media</small>
+                                                    <i class="fa fa-file-text-o"></i>
+                                                </div>
+                                            </a>
+                                        </figure>
+                                        <!-- /Portfolio Item 1 -->
+
+                                        <!-- Portfolio Item 2 -->
+                                        <figure class="item" data-groups='["all", "video"]'>
+                                            <a href="https://player.vimeo.com/video/97102654?autoplay=1"
+                                               title="Praesent Dolor Ex" class="lightbox mfp-iframe">
+                                                <img src="{% static 'images/portfolio/2.jpg' %}" alt="">
+                                                <div>
+                                                    <h5 class="name">Project Name</h5>
+                                                    <small>Video</small>
+                                                    <i class="fa fa-video-camera"></i>
+                                                </div>
+                                            </a>
+                                        </figure>
+                                        <!-- /Portfolio Item 2 -->
+
+                                        <!-- Portfolio Item 3 -->
+                                        <figure class="item" data-groups='["all","illustration"]'>
+                                            <a href="images/portfolio/full/3.jpg" class="lightbox"
+                                               title="Duis Eu Eros Viverra">
+                                                <img src="{% static 'images/portfolio/3.jpg' %}" alt="">
+                                                <div>
+                                                    <h5 class="name">Project Name</h5>
+                                                    <small>Illustration</small>
+                                                    <i class="fa fa-image"></i>
+                                                </div>
+                                            </a>
+                                        </figure>
+                                        <!-- /Portfolio Item 3 -->
+
+                                        <!-- Portfolio Item 4 -->
+                                        <figure class="item" data-groups='["all", "media"]'>
+                                            <a class="ajax-page-load" href="portfolio-2.html">
+                                                <img src="{% static 'images/portfolio/4.jpg' %}" alt="">
+                                                <div>
+                                                    <h5 class="name">Project Name</h5>
+                                                    <small>Media</small>
+                                                    <i class="fa fa-file-text-o"></i>
+                                                </div>
+                                            </a>
+                                        </figure>
+                                        <!-- /Portfolio Item 4 -->
+
+                                        <!-- Portfolio Item 5 -->
+                                        <figure class="item" data-groups='["all", "illustration"]'>
+                                            <a href="images/portfolio/full/5.jpg" class="lightbox"
+                                               title="Aliquam Condimentum Magna Rhoncus">
+                                                <img src="{% static 'images/portfolio/5.jpg' %}" alt="">
+                                                <div>
+                                                    <h5 class="name">Project Name</h5>
+                                                    <small>Illustration</small>
+                                                    <i class="fa fa-image"></i>
+                                                </div>
+                                            </a>
+                                        </figure>
+                                        <!-- /Portfolio Item 5 -->
+
+                                        <!-- Portfolio Item 6 -->
+                                        <figure class="item" data-groups='["all", "media"]'>
+                                            <a class="ajax-page-load" href="portfolio-3.html">
+                                                <img src="{% static 'images/portfolio/6.jpg' %}" alt="">
+                                                <div>
+                                                    <h5 class="name">Project Name</h5>
+                                                    <small>Media</small>
+                                                    <i class="fa fa-file-text-o"></i>
+                                                </div>
+                                            </a>
+                                        </figure>
+                                        <!-- /Portfolio Item 6 -->
+
+                                        <!-- Portfolio Item 7 -->
+                                        <figure class="item" data-groups='["all", "video"]'>
+                                            <a href="https://player.vimeo.com/video/97102654?autoplay=1"
+                                               title="Nulla Facilisi" class="lightbox mfp-iframe">
+                                                <img src="{% static 'images/portfolio/7.jpg' %}" alt="">
+                                                <div>
+                                                    <h5 class="name">Project Name</h5>
+                                                    <small>Video</small>
+                                                    <i class="fa fa-video-camera"></i>
+                                                </div>
+                                            </a>
+                                        </figure>
+                                        <!-- /Portfolio Item 7 -->
+
+                                        <!-- Portfolio Item 8 -->
+                                        <figure class="item" data-groups='["all",  "media"]'>
+                                            <a class="ajax-page-load" href="portfolio-4.html">
+                                                <img src="{% static 'images/portfolio/8.jpg' %}" alt="">
+                                                <div>
+                                                    <h5 class="name">Project Name</h5>
+                                                    <small>Media</small>
+                                                    <i class="fa fa-file-text-o"></i>
+                                                </div>
+                                            </a>
+                                        </figure>
+                                        <!-- /Portfolio Item 8 -->
+
+                                        <!-- Portfolio Item 9 -->
+                                        <figure class="item" data-groups='["all","illustration"]'>
+                                            <a href="images/portfolio/full/9.jpg" class="lightbox"
+                                               title="Mauris Neque Dolor">
+                                                <img src="{% static 'images/portfolio/9.jpg' %}" alt="">
+                                                <div>
+                                                    <h5 class="name">Project Name</h5>
+                                                    <small>Illustration</small>
+                                                    <i class="fa fa-image"></i>
+                                                </div>
+                                            </a>
+                                        </figure>
+                                        <!-- /Portfolio Item 9 -->
+
+                                        <!-- Portfolio Item 10 -->
+                                        <figure class="item" data-groups='["all", "video"]'>
+                                            <a href="https://player.vimeo.com/video/97102654?autoplay=1"
+                                               title="Donec Lectus Arcu" class="lightbox mfp-iframe">
+                                                <img src="{% static 'images/portfolio/10.jpg' %}" alt="">
+                                                <div>
+                                                    <h5 class="name">Project Name</h5>
+                                                    <small>Video</small>
+                                                    <i class="fa fa-video-camera"></i>
+                                                </div>
+                                            </a>
+                                        </figure>
+                                        <!-- /Portfolio Item 10 -->
+
+                                        <!-- Portfolio Item 11 -->
+                                        <figure class="item" data-groups='["all","illustration"]'>
+                                            <a href="images/portfolio/full/11.jpg" class="lightbox"
+                                               title="Duis Eu Eros Viverra">
+                                                <img src="{% static 'images/portfolio/11.jpg' %}" alt="">
+                                                <div>
+                                                    <h5 class="name">Project Name</h5>
+                                                    <small>Illustration</small>
+                                                    <i class="fa fa-image"></i>
+                                                </div>
+                                            </a>
+                                        </figure>
+                                        <!-- /Portfolio Item 11 -->
+
+                                        <!-- Portfolio Item 12 -->
+                                        <figure class="item" data-groups='["all","media"]'>
+                                            <a class="ajax-page-load" href="portfolio-5.html">
+                                                <img src="{% static 'images/portfolio/12.jpg' %}" alt="">
+                                                <div>
+                                                    <h5 class="name">Project Name</h5>
+                                                    <small>Media</small>
+                                                    <i class="fa fa-file-text-o"></i>
+                                                </div>
+                                            </a>
+                                        </figure>
+                                        <!-- /Portfolio Item 12 -->
+                                    </div>
+                                    <!-- /Portfolio Grid -->
+
+                                </div>
+                                <!-- /Portfolio Content -->
+                            </div>
+                        </div>
+                    </section>
+                    <!-- /Portfolio Subpage -->
+
+
+                </div>
+            </div>
+            <!-- /Page changer wrapper -->
         </div>
-        <!-- /Page changer wrapper -->
-    </div>
 
 {% endblock %}

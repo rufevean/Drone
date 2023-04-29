@@ -1,7 +1,51 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block content %}
 
-<section class="main-body">
-</section>
+    <!-- Main Content -->
+
+    <div id="main" class="site-main">
+        <!-- Page changer wrapper -->
+
+        <div class="pt-wrapper">
+            <ul id="nav" class="site-main-menu">
+                <li>
+                    <a class="pt-trigger" href="#home" data-animation="62">Login</a>
+                </li>
+            </ul>
+            <!-- Subpages -->
+            <div class="subpages">
+
+                <!-- Home Subpage -->
+                <section class="pt-page" data-id="home">
+
+                    <div class="section-inner start-page-content">
+
+                        <div class="page-header">
+
+                            <div class="row">
+
+                                <div class="col-sm-12 col-md-12 col-lg-12">
+                                    <div class="title-block">
+                                        <h1>Login</h1>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="page-content">
+                            <div class="row">
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- End of Home Subpage -->
+
+            </div>
+        </div>
+        <!-- /Page changer wrapper -->
+    </div>
 
 {% endblock %}
