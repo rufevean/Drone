@@ -20,7 +20,7 @@ class Drone(models.Model):
     internal_storage = models.IntegerField(blank=True, null=True)
 
     class Meta:
-        db_table = "drone"
+        db_table = "drones_drone"
 
     def __str__(self):
         return self.name
@@ -33,7 +33,7 @@ class Battery(models.Model):
     charging_temperature = models.CharField(max_length=50,blank=True, null=True)
     charging_time = models.IntegerField()
     class Meta:
-        db_table = "battery"
+        db_table = "drones_battery"
 
 class RemoteController(models.Model):
     drone = models.ForeignKey(Drone, related_name="controller", on_delete=models.CASCADE)
@@ -42,7 +42,7 @@ class RemoteController(models.Model):
     transmitter_power = models.TextField(blank=True, null=True)
 
     class Meta:
-        db_table = "remotecontroller"
+        db_table = "drones_remotecontroller"
 class Camera(models.Model):
     drone = models.ForeignKey(Drone, related_name="camera", on_delete=models.CASCADE)
     image_sensor = models.TextField(blank=True, null=True)
@@ -58,7 +58,7 @@ class Camera(models.Model):
     digital_zoom = models.CharField(max_length=50, blank=True, null=True)
 
     class Meta:
-        db_table = "camera"
+        db_table = "drones_camera"
 class Sensor(models.Model):
     drone = models.ForeignKey(Drone, related_name="sensor", on_delete=models.CASCADE)
     sensors_type = models.CharField(max_length=100, blank=True, null=True)
@@ -68,7 +68,7 @@ class Sensor(models.Model):
     upward = models.TextField(blank=True, null=True)
     downward = models.TextField(blank=True, null=True)
     class Meta:
-        db_table = "sensor"
+        db_table = "drones_sensor"
 
 class VideoTransmission(models.Model):
     drone = models.ForeignKey(Drone, related_name="transmission", on_delete=models.CASCADE)
@@ -80,4 +80,4 @@ class VideoTransmission(models.Model):
     lowest_latency = models.CharField(max_length=50, blank=True, null=True)
 
     class Meta:
-        db_table = "videotransmission"
+        db_table = "drones_videotransmission"
