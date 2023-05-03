@@ -26,7 +26,7 @@ class Drone(models.Model):
         return self.name
 
 class Battery(models.Model):
-    drone = models.ForeignKey(Drone,related_name="battery", on_delete=models.CASCADE)
+    drone = models.ForeignKey(Drone,related_name="battery", on_delete=models.CASCADE,primary_key=True,unique=True)
     capacity = models.IntegerField()
     weight = models.FloatField(blank=True, null=True)
     battery_type = models.CharField(max_length=50,blank=True, null=True)
@@ -81,3 +81,10 @@ class VideoTransmission(models.Model):
 
     class Meta:
         db_table = "drones_videotransmission"
+
+class TestModel(models.Model):
+    live_view_quality = models.CharField(max_length=50, blank=True, null=True)
+
+    class Meta:
+        managed = False
+        db_table = "drones_vdrone"
